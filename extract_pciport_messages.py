@@ -2,7 +2,6 @@ import os
 import re
 import sys
 
-
 def main():
     fileName = ""
     #Get Filename from paramaters
@@ -14,17 +13,18 @@ def main():
     except Exception:
         print("File path {} does not exist. Give valid file path as parameter .(eg: testFile.txt )".format(fileName))
         sys.exit(0)
-    extractSystemTime(fileName)
+    extractPciPort(fileName)
 
-#Extract system times to output file
-def extractSystemTime(fileName):
-    with open(fileName + "_system_time.txt", "a") as outputFile:
+def extractPciPort(fileName):
+    with open(fileName + "_pciport_messages.txt", "a") as outputFile:
         with open(fileName) as file:
             currentLine = file.readline()
-            while currentLine:
-                date = re.search("\s(0[  0-9]|1[0-9]|2[0-4])(:)([0-5][0-9])(:)[0-5][0-9]\s", currentLine)
-                if date:
-                    outputFile.write(str(date[0]).replace(" ", "") + "\n")
-                currentLine = file.readline()
+
+
+
+
+
+
+
 if __name__ == '__main__':
     main()

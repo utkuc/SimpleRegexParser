@@ -67,4 +67,4 @@ Nov 03 00:22:05 host kernel: mce: CPU6: Core temperature/speed normal
 Nov 03 00:22:05 host kernel: mce: CPU3: Package temperature/speed normal
 Nov 03 00:22:05 host kernel: mce: CPU4: Package temperature/speed normal
 Nov 03 00:22:05 host kernel: mce: CPU0: Core temperature/speed normal
-Nov 03 00:22:05 host kernel: mce: CPU2: Package temperature/speed normal
+Nov 03 01:59:05 host kernel: mce: CPU2: Package temperature/speed normal

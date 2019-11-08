@@ -22,7 +22,7 @@ def extractSystemTime(fileName):
         with open(fileName) as file:
             currentLine = file.readline()
             while currentLine:
-                date = re.search("\s(0[  0-9]|1[0-9]|2[0-4])(:)([0-5][0-9])(:)[0-5][0-9]\s", currentLine)
+                date = re.search(r"\b(0[0-9]|1[0-9]|2[0-4])(:)([0-5][0-9])(:)[0-5][0-9]\b", currentLine)
                 if date:
                     outputFile.write(str(date[0]).replace(" ", "") + "\n")
                 currentLine = file.readline()
